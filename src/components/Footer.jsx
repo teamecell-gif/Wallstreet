@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   return (
@@ -6,9 +7,13 @@ const Footer = () => {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-4 mb-20 items-start text-center md:text-left">
           <div className="md:col-span-4 flex flex-col gap-6 items-center md:items-start">
-            <div className="w-48 h-20 bg-surface-dark border-2 border-dashed border-border-dark rounded-xl flex items-center justify-center group hover:border-primary/40 transition-colors">
-              <span className="text-white/20 text-xs font-bold uppercase tracking-widest text-center px-4">Organization Logo Placeholder</span>
-            </div>
+
+            <img 
+  src={logo} 
+  alt="Organization Logo" 
+  className="w-48 h-auto object-contain" 
+/>
+            
             <p className="text-white/60 text-lg leading-relaxed max-w-[320px]">
               Fostering innovation and entrepreneurship among students.
             </p>
