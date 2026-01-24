@@ -46,9 +46,8 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <a 
                   key={link.name}
-                  href={`#${link.href}`}
                   onClick={(e) => handleScroll(e, link.href)}
-                  className="px-4 py-2 rounded-lg text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300 text-sm font-medium leading-normal"
+                  className="cursor-pointer px-4 py-2 rounded-lg text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300 text-sm font-bold leading-normal"
                 >
                   {link.name}
                 </a>
@@ -56,7 +55,6 @@ const Navbar = () => {
             </nav>
             
             <a 
-              href="#register"
               onClick={(e) => handleScroll(e, 'register')}
               className="flex min-w-[110px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-background-dark text-sm font-bold transition-transform active:scale-95 glow-orange"
             >
@@ -90,18 +88,16 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <a
                   key={link.name}
-                  href={`#${link.href}`}
                   onClick={(e) => handleScroll(e, link.href)}
-                  className="px-4 py-3 rounded-lg text-white/80 hover:text-white hover:bg-white/10 transition-all font-medium text-center"
+                  className="cursor-pointer px-4 py-3 rounded-lg text-white/80 hover:text-white hover:bg-white/10 transition-all font-bold text-center"
                 >
                   {link.name}
                 </a>
               ))}
               <div className="h-px bg-white/10 my-2"></div>
               <a
-                href="#register"
                 onClick={(e) => handleScroll(e, 'register')}
-                className="w-full flex items-center justify-center rounded-lg h-12 bg-primary text-background-dark font-bold active:scale-95 glow-orange"
+                className="w-full flex items-center justify-center cursor-pointer rounded-lg h-12 bg-primary text-background-dark font-bold active:scale-95 glow-orange"
               >
                 Join Now
               </a>
