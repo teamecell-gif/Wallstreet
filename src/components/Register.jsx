@@ -32,11 +32,11 @@ const Register = () => {
               </div>
               <div className="flex flex-col gap-2">
                 <label className="text-sm font-bold text-white/80">Contact Number</label>
-                <input className="w-full bg-background-dark border border-border-dark rounded-lg px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="+1 (555) 000-0000" type="tel" />
+                <input className="w-full bg-background-dark border border-border-dark rounded-lg px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="+91 666 000 0000" type="tel" />
               </div>
               <div className="flex flex-col gap-2">
                 <label className="text-sm font-bold text-white/80">College Name</label>
-                <input className="w-full bg-background-dark border border-border-dark rounded-lg px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="Harvard University" type="text" />
+                <input className="w-full bg-background-dark border border-border-dark rounded-lg px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="VNIT Nagpur" type="text" />
               </div>
               
               <div className="md:col-span-2 flex items-start gap-3 pt-2">
