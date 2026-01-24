@@ -70,7 +70,7 @@ const Footer = () => {
             E-Cell office, 1st Floor VNIT Canteen, Visvesvaraya National Institute Of Technology, South Ambazari Road, Abhyankar Nagar, Nagpur-440010
           </p>
           <p className="text-white/30 text-xs font-medium tracking-wide">
-            © 2025 Wall Street Competition. All rights reserved.
+            © 2025 The Entrepreneurship Cell, VNIT. All rights reserved.
           </p>
         </div>
       </div>

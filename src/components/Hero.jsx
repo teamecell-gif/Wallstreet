@@ -2,6 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
+  const handleScroll = (e, targetId) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative flex flex-col items-center overflow-hidden">
       <div className="max-w-[1280px] w-full px-4 sm:px-10 py-12 md:py-24">
@@ -23,7 +31,7 @@ const Hero = () => {
                   className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit"
                 >
                   <span className="size-2 rounded-full bg-primary animate-pulse"></span>
-                  <span className="text-primary text-xs font-bold uppercase tracking-widest">Season 2025 Now Open</span>
+                  <span className="text-primary text-xs font-bold uppercase tracking-widest">Season 2026 Now Open</span>
                 </motion.div>
                 
                 <h1 className="text-white text-5xl font-black leading-[1.1] tracking-tight @[480px]:text-7xl">
@@ -41,10 +49,10 @@ const Hero = () => {
                 transition={{ delay: 0.4, duration: 0.6 }}
                 className="flex flex-col sm:flex-row gap-4"
               >
-                <a className="flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-background-dark text-lg font-bold transition-all hover:bg-primary/90 glow-orange" href="#register">
+                <a onClick={(e) => handleScroll(e, 'register')} className="flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-background-dark text-lg font-bold transition-all hover:bg-primary/90 glow-orange">
                   Get Started
                 </a>
-                <a className="flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-white/5 border border-white/10 text-white text-lg font-bold transition-all hover:bg-white/10" href="#about">
+                <a onClick={(e) => handleScroll(e, 'about')} className="flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-white/5 border border-white/10 text-white text-lg font-bold transition-all hover:bg-white/10">
                   Learn More
                 </a>
               </motion.div>
