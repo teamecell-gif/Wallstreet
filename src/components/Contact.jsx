@@ -22,43 +22,22 @@ const Contact = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-[900px]">
-            {/* Contact Card 1 */}
+          <div className="flex justify-center w-full">
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="flex items-center gap-6 p-8 rounded-2xl bg-surface-dark border border-border-dark hover:border-primary/50 transition-all group hover:bg-surface-dark/80"
+              className="flex items-center justify-center gap-6 p-8 rounded-2xl bg-surface-dark border border-border-dark hover:border-primary/50 transition-all group hover:bg-surface-dark/80 w-full max-w-[350px]"
             >
               <div className="size-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-all shrink-0">
                 <span className="material-symbols-outlined text-4xl">person</span>
               </div>
-              <div className="text-left">
-                <h3 className="text-2xl font-bold text-white mb-2">Alex Johnson</h3>
-                <a className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-lg font-semibold" href="tel:+15551234567">
+              <div className="text-center md:text-left">
+                <h3 className="text-2xl font-bold text-white mb-2">Mohit</h3>
+                <a className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-lg font-semibold" href="tel:+919322010629">
                   <span className="material-symbols-outlined text-xl">call</span>
-                  +1 (555) 123-4567
-                </a>
-              </div>
-            </motion.div>
-
-            {/* Contact Card 2 */}
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="flex items-center gap-6 p-8 rounded-2xl bg-surface-dark border border-border-dark hover:border-primary/50 transition-all group hover:bg-surface-dark/80"
-            >
-              <div className="size-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-all shrink-0">
-                <span className="material-symbols-outlined text-4xl">person</span>
-              </div>
-              <div className="text-left">
-                <h3 className="text-2xl font-bold text-white mb-2">Sarah Smith</h3>
-                <a className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-lg font-semibold" href="tel:+15559876543">
-                  <span className="material-symbols-outlined text-xl">call</span>
-                  +1 (555) 987-6543
+                  +91 9322010629
                 </a>
               </div>
             </motion.div>
