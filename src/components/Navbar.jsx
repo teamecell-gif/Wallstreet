@@ -34,8 +34,8 @@ const Navbar = () => {
           
           {/* Logo Section */}
           <div className="flex items-center gap-3 text-primary">
-            <div className="size-8 flex items-center justify-center">
-              <span className="material-symbols-outlined text-3xl">trending_up</span>
+            <div className="size-12 flex items-center justify-center">
+              <img src="/logo.png" alt="Wall Street Logo" className="w-full h-full object-contain" />
             </div>
             <h2 className="text-white text-xl font-extrabold leading-tight tracking-tight">Wall Street</h2>
           </div>
