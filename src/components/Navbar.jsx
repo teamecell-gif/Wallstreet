@@ -9,9 +9,15 @@ const Navbar = () => {
     e.preventDefault();
     const element = document.getElementById(targetId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      if (isOpen) {
+        setIsOpen(false);
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 250);
+      } else {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-    setIsOpen(false); // Close mobile menu after clicking
   };
 
   // Nav Links Data
@@ -34,7 +40,7 @@ const Navbar = () => {
           
           {/* Logo Section */}
           <div className="flex items-center gap-3 text-primary">
-            <div className="size-12 flex items-center justify-center">
+            <div className="size-8 md:size-12 flex items-center justify-center">
               <img src="/logo.png" alt="Wall Street Logo" className="w-full h-full object-contain" />
             </div>
             <h2 className="text-white text-xl font-extrabold leading-tight tracking-tight">Wall Street</h2>
@@ -82,7 +88,7 @@ const Navbar = () => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="md:hidden overflow-hidden bg-background-dark border-t border-border-dark"
+            className="absolute top-full left-0 w-full md:hidden overflow-hidden bg-background-dark border-t border-border-dark"
           >
             <div className="flex flex-col p-4 gap-2">
               {navLinks.map((link) => (
