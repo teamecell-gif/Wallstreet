@@ -34,7 +34,7 @@ const Timeline = () => {
               </div>
               <div className="absolute left-0 md:left-1/2 size-8 rounded-full border-4 border-background-dark bg-primary md:-translate-x-1/2 z-10 glow-orange"></div>
               <div className="md:w-5/12 bg-surface-dark border border-border-dark p-6 rounded-xl md:ml-8 hover:border-primary/50 transition-colors">
-                <div className="md:hidden text-primary text-xs font-bold mb-2">29th January 2026</div>
+                <div className="md:hidden text-primary text-xs font-bold mb-2">4th February 2026</div>
                 <h3 className="text-white font-bold text-lg mb-1">Registration Commences</h3>
                 <p className="text-white/50 text-sm">Registration for the event commences</p>
               </div>
@@ -49,11 +49,11 @@ const Timeline = () => {
               className="relative flex items-center justify-start md:justify-between w-full mb-12 flex-row-reverse pl-12 md:pl-0"
             >
               <div className="hidden md:block w-5/12 text-left pl-8">
-                <span className="text-primary text-sm font-bold bg-primary/10 px-3 py-1 rounded-full">10 February 2026</span>
+                <span className="text-primary text-sm font-bold bg-primary/10 px-3 py-1 rounded-full">9 February 2026</span>
               </div>
               <div className="absolute left-0 md:left-1/2 size-8 rounded-full border-4 border-background-dark bg-primary md:-translate-x-1/2 z-10 glow-orange"></div>
               <div className="md:w-5/12 bg-surface-dark border border-border-dark p-6 rounded-xl md:mr-8 hover:border-primary/50 transition-colors">
-                <div className="md:hidden text-primary text-xs font-bold mb-2">10 February 2026</div>
+                <div className="md:hidden text-primary text-xs font-bold mb-2">9 February 2026</div>
                 <h3 className="text-white font-bold text-lg mb-1">Gameplay Weekend Starts</h3>
                 <p className="text-white/50 text-sm">Gameplay weekend starts for the registered participants</p>
               </div>
@@ -68,11 +68,11 @@ const Timeline = () => {
               className="relative flex items-center justify-start md:justify-between w-full mb-12 pl-12 md:pl-0"
             >
               <div className="hidden md:block w-5/12 text-right pr-8">
-                <span className="text-primary text-sm font-bold bg-primary/10 px-3 py-1 rounded-full">14 February 2026</span>
+                <span className="text-primary text-sm font-bold bg-primary/10 px-3 py-1 rounded-full">13 February 2026</span>
               </div>
               <div className="absolute left-0 md:left-1/2 size-8 rounded-full border-4 border-background-dark bg-primary md:-translate-x-1/2 z-10 glow-orange"></div>
               <div className="md:w-5/12 bg-surface-dark border border-border-dark p-6 rounded-xl md:ml-8 hover:border-primary/50 transition-colors">
-                <div className="md:hidden text-primary text-xs font-bold mb-2">14 February 2026</div>
+                <div className="md:hidden text-primary text-xs font-bold mb-2">13 February 2026</div>
                 <h3 className="text-white font-bold text-lg mb-1">Final Day of Gameplay</h3>
                 <p className="text-white/50 text-sm">Final day of gameplay for the registered participants</p>
               </div>

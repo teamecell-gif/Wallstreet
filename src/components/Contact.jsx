@@ -22,7 +22,10 @@ const Contact = () => {
             </p>
           </motion.div>
 
-          <div className="flex justify-center w-full">
+          {/* Container modified to hold two cards with gap and wrap */}
+          <div className="flex flex-wrap justify-center gap-6 w-full">
+            
+            {/* Card 1: Anurag */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -34,13 +37,34 @@ const Contact = () => {
                 <span className="material-symbols-outlined text-4xl">person</span>
               </div>
               <div className="text-center md:text-left">
-                <h3 className="text-2xl font-bold text-white mb-2">Mohit</h3>
-                <a className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-lg font-semibold" href="tel:+919322010629">
+                <h3 className="text-2xl font-bold text-white mb-2">Anurag</h3>
+                <a className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-lg font-semibold" href="tel:+919076967718">
                   <span className="material-symbols-outlined text-xl">call</span>
-                  +91 9322010629
+                  +91 90769 67718
                 </a>
               </div>
             </motion.div>
+
+            {/* Card 2: Tanvi */}
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="flex items-center justify-center gap-6 p-8 rounded-2xl bg-surface-dark border border-border-dark hover:border-primary/50 transition-all group hover:bg-surface-dark/80 w-full max-w-[350px]"
+            >
+              <div className="size-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-all shrink-0">
+                <span className="material-symbols-outlined text-4xl">person</span>
+              </div>
+              <div className="text-center md:text-left">
+                <h3 className="text-2xl font-bold text-white mb-2">Tanvi</h3>
+                <a className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-lg font-semibold" href="tel:+918624069467">
+                  <span className="material-symbols-outlined text-xl">call</span>
+                  +91 86240 69467
+                </a>
+              </div>
+            </motion.div>
+
           </div>
         </div>
       </div>
